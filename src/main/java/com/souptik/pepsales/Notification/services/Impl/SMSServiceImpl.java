@@ -13,13 +13,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class SMSServiceImpl implements SMSService {
 
-    @Value("${TWILIO_ACCOUNT_SID}")
+    @Value("${twilio.account.sid}")
     String ACCOUNT_SID;
 
-    @Value("${TWILIO_AUTH_TOKEN}")
+    @Value("${twilio.auth.token}")
     String AUTH_TOKEN;
 
-    @Value("${TWILIO_OUTGOING_SMS_NUMBER}")
+    @Value("${twilio.outgoing.sms.number}")
     String OUTGOING_SMS_NUMBER;
 
 
